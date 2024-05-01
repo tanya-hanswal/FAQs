@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --light-pink: hsl(275, 100%, 97%);
+    --purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 90%, 20%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-color: var(--light-pink);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.half-img{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 300px;
+    background-image: url("https://cheosphere.github.io/faq-accordion-main/assets/background-pattern-desktop-1d23f4a7.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.box{
+    width: 500px;
+    background-color: white;
+    padding:40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.5);
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px ;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom:1px solid var(--lightpink);
+    padding-bottom:20px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.ques:hover{
+    color: var(--dark-purple);
+}
+
+.minus-icon{
+    background-image: url("https://cheosphere.github.io/faq-accordion-main/assets/icon-minus-259cbe76.svg");
+    min-width: 30px;
+    min-height: 30px;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+}
+.plus-icon{
+    min-width: 30px;
+    min-height: 30px;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-image: url("https://cheosphere.github.io/faq-accordion-main/assets/icon-plus-6e79ac66.svg");
+}
+.ques{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.answer{
+    color: var(--purple);
+    font-size: 1.02rem;
+    font-weight: 400;
+    letter-spacing: .018rem;
+    line-height: 1.5rem;
+    transition: all 1s;
+}
+.hide{
+    display: none;
+}
+
+
+
